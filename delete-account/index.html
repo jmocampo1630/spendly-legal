@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en" class="frame-guard-pending">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="referrer" content="no-referrer">
+    <meta name="robots" content="noindex, nofollow">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; connect-src https://zdwsdtgixkasvkwjecte.supabase.co; img-src 'none'; font-src 'none'; media-src 'none'; object-src 'none'; frame-src 'none'; worker-src 'none'; manifest-src 'none'; base-uri 'none'; form-action 'none'">
+    <title>Delete your Spendly account</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <main class="page-shell">
+      <header class="page-header">
+        <p class="eyebrow">Spendly account</p>
+        <h1>Delete your cloud account</h1>
+        <p class="lede">
+          Sign in with the Google account you use for Spendly. You will see the
+          authenticated email before you confirm permanent deletion.
+        </p>
+      </header>
+
+      <noscript>
+        <section class="card notice">
+          <h2>JavaScript is required</h2>
+          <p>This page needs JavaScript to complete secure sign-in and account deletion.</p>
+        </section>
+      </noscript>
+
+      <section class="card auth-card" aria-labelledby="account-action-heading">
+        <h2 id="account-action-heading">Account verification</h2>
+
+        <div id="loading-panel" class="state-panel" aria-live="polite">
+          <span class="spinner" aria-hidden="true"></span>
+          <p id="loading-message">Checking your sign-in…</p>
+        </div>
+
+        <div id="signed-out-panel" class="state-panel" hidden>
+          <p id="signed-out-message">
+            Sign in to verify the account. An email address or user ID entered on
+            this page is never accepted as deletion authority.
+          </p>
+          <button id="sign-in-button" class="button button-primary" type="button">
+            Continue with Google
+          </button>
+        </div>
+
+        <form id="delete-form" class="state-panel" hidden novalidate>
+          <div class="account-summary">
+            <span class="label">Signed in as</span>
+            <strong id="account-email"></strong>
+          </div>
+          <button id="change-account-button" class="text-button" type="button">
+            Use another Google account
+          </button>
+
+          <div class="field">
+            <label for="confirmation-input">
+              Type <strong>DELETE</strong> to confirm
+            </label>
+            <input
+              id="confirmation-input"
+              name="confirmation"
+              type="text"
+              inputmode="text"
+              autocomplete="off"
+              autocapitalize="characters"
+              spellcheck="false"
+              aria-describedby="confirmation-help"
+            >
+            <p id="confirmation-help" class="field-help">
+              This must match exactly. This action cannot be undone.
+            </p>
+          </div>
+
+          <button id="delete-button" class="button button-danger" type="submit" disabled>
+            Permanently delete cloud account
+          </button>
+        </form>
+
+        <div id="result-panel" class="state-panel" hidden tabindex="-1">
+          <h2 id="result-heading"></h2>
+          <p id="result-message"></p>
+          <button id="retry-button" class="button button-danger" type="button" hidden>
+            Try deletion again
+          </button>
+          <button id="return-button" class="button button-primary" type="button" hidden>
+            Return to sign in
+          </button>
+        </div>
+
+        <p id="status-message" class="status-message" role="status" aria-live="polite"></p>
+      </section>
+
+      <section class="card details-card" aria-labelledby="what-is-deleted-heading">
+        <h2 id="what-is-deleted-heading">What cloud deletion covers</h2>
+        <p>Permanent deletion removes your account-linked cloud data, including:</p>
+        <ul>
+          <li>your Supabase authentication account and profile;</li>
+          <li>account-owned credits and paid entitlements;</li>
+          <li>scan requests and temporary parsed scan results; and</li>
+          <li>account-linked scan usage rows.</li>
+        </ul>
+      </section>
+
+      <section class="card warning-card" aria-labelledby="what-remains-heading">
+        <h2 id="what-remains-heading">What this page cannot delete</h2>
+        <p>
+          Remote deletion cannot reach an old phone, tablet, or computer. Clear
+          Spendly's app storage or uninstall Spendly on every device where local
+          budgets, reminders, settings, caches, or notifications should be removed.
+        </p>
+        <p>
+          Backup files you exported to Downloads, Drive, email, or another location
+          are separate copies and remain until you delete them yourself.
+        </p>
+        <p>
+          A pseudonymous device free-scan record may remain for up to 90 days for
+          fraud prevention. It is not an account and cannot restore deleted account
+          or budgeting data.
+        </p>
+      </section>
+
+      <section class="card support-card" aria-labelledby="support-heading">
+        <h2 id="support-heading">Need help?</h2>
+        <p>
+          If automatic deletion does not work, email
+          <a href="mailto:spendly.app.support@gmail.com">spendly.app.support@gmail.com</a>.
+          Support may need to verify account ownership before acting on a request.
+        </p>
+        <p><a href="../privacy.md">Read the Spendly Privacy Policy</a></p>
+      </section>
+    </main>
+  </body>
+</html>

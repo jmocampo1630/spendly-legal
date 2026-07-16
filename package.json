@@ -1,0 +1,18 @@
+{
+  "name": "spendly-legal",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "esbuild delete-account/src/main.js --bundle --minify --format=iife --target=es2020 --legal-comments=none --outfile=delete-account/app.js",
+    "test": "node --test",
+    "verify:publication": "node scripts/verify-publication.mjs"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "2.52.1"
+  },
+  "devDependencies": {
+    "esbuild": "0.28.1"
+  }
+}
+

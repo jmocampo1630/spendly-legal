@@ -56,10 +56,12 @@ Spendly does not intentionally send your sessions, budgets, reminders, backup fi
 
 Settings provides two account-deletion choices. **Delete account** permanently deletes the authentication account and associated cloud account data while keeping the local device workspace. **Delete account and erase this device** also removes Spendly's local database, settings, cached files, and notifications from that device. Backup files that you exported to Downloads, Drive, email, or another app are separate copies and are not deleted automatically.
 
+You can also use the [Spendly web account-deletion page](delete-account/) to delete your authentication account and associated cloud data without reinstalling the app. Web deletion cannot remotely reach any device. Clear Spendly's app storage or uninstall it on every device where local budgets, reminders, settings, caches, or notifications should also be removed.
+
 The pseudonymous device free-scan counter described above is retained separately for up to 90 days for fraud prevention and does not reset when an account is deleted. This limited record cannot be used to restore the deleted account or its budgeting data.
 
 You can also delete individual sessions, reminders, and eligible categories. Uninstalling Spendly removes the local app database and locally stored settings from your device, subject to the operating system's storage and backup behavior.
 
 ## Contact
 
-For privacy questions, contact the app developer through the support contact listed on Spendly's Play Store page.
+For privacy questions or account-deletion assistance, contact [spendly.app.support@gmail.com](mailto:spendly.app.support@gmail.com).
